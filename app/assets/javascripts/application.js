@@ -12,5 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+  $.vegas({
+    src:'/images/background.jpg'
+  });
+  $.vegas('overlay', {
+    src:'/vegas/overlays/13.png'
+  });
+});
