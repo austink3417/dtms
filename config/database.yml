@@ -1,0 +1,9 @@
+development: &default
+  adapter: postgresql
+  host: 127.0.0.1
+  database: dtms_dev
+
+test: &test
+  <<: *default
+  database: dtms_test
+  min_messages: WARNING
